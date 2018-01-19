@@ -11,4 +11,5 @@ Scores will not persist between games.
 ## Credits
 
 Created by Andrew Tek, Christopher Kilian, and Nicholas Pham
+
 Original repository: https://github.com/andrew-tek/Concentration
