@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--***************************************************************-->
+<!--* file: activity_game_over.xml-->
+<!--* author: Nick Pham-->
+<!--* class: CS 245 – Programming Graphical User Interfaces-->
+<!--*-->
+<!--* assignment: Android Concentration Game-->
+<!--* date last modified: 12/5/2017-->
+<!--*-->
+<!--* purpose: Submit High Score and game over screen-->
+<!--*-->
+<!--*-->
+<!--****************************************************************-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/highScoreTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="GAME OVER"
+            android:textColor="#000"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/finalScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@id/highScoreTextView"
+            android:textColor="#000"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/askForScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_below="@id/finalScore"/>
+
+        <EditText
+            android:id="@+id/nameSubmit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/askForScore"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/submitScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignTop="@+id/nameSubmit"
+            android:layout_toEndOf="@+id/nameSubmit"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/mainMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/finalScore"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:text="Return to Main Menu" />
+
+    </RelativeLayout>
+
+</LinearLayout>

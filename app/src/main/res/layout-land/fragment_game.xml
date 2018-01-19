@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--***************************************************************-->
+<!--* file: activity_highscore_info.xml-->
+<!--* author: Christopher Kilian-->
+<!--* class: CS 245 – Programming Graphical User Interfaces-->
+<!--*-->
+<!--* assignment: Android Concentration Game-->
+<!--* date last modified: 12/5/2017-->
+<!--*-->
+<!--* purpose: Fragment for all of the cards to be added in the program (landscape) -->
+<!--*-->
+<!--*-->
+<!--****************************************************************-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="10sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_weight="20"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="0sp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_weight="20"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="0sp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdRow"
+        android:layout_weight="20"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="0sp">
+    </LinearLayout>
+
+
+</LinearLayout>

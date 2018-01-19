@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/***************************************************************
+* file: activity_game.xml
+* author: Christopher Kilian, Andrew Tek
+* class: CS 245 – Programming Graphical User Interfaces
+*
+* assignment: Android Concentration Game
+* date last modified: 12/5/2017
+*
+* purpose: Holds some of the game logic as well as the score. Also holds the fragment which will
+* display the cards
+*
+****************************************************************/-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Score: 0"
+            android:textColor="#FFF"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/toggleMusicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Turn Music Off"
+            android:textSize="10dp" />
+
+        <FrameLayout
+            android:id="@+id/music_fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_weight="20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/tryAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="TRY AGAIN"
+            />
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="NEW GAME"
+            />
+        <Button
+            android:id="@+id/endGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="END GAME"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

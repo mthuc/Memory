@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.cpp.concentration.MusicFragment">
+    <!--***************************************************************-->
+    <!--* file: fragment_music.xml-->
+    <!--* author: Christopher Kilian, Andrew Tek-->
+    <!--* class: CS 245 – Programming Graphical User Interfaces-->
+    <!--*-->
+    <!--* assignment: Android Concentration Game-->
+    <!--* date last modified: 12/5/2017-->
+    <!--*-->
+    <!--* purpose: Holds the fragment for the music. Will not show anything (landscape) -->
+    <!--*-->
+    <!--*-->
+    <!--****************************************************************-->
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</FrameLayout>
